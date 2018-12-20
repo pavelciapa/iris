@@ -73,7 +73,7 @@ class Test(BaseTest):
         # Close download panel.
         click(DownloadManager.DownloadsPanel.DOWNLOADS_BUTTON.target_offset(-50, 0))
 
-        # tear_down
+    def teardown(self):
         # Open the 'Show Downloads' window and cancel all 'in progress' downloads.
         for step in open_clear_recent_history_window_from_library_menu():
             assert_true(self, step.resolution, step.message)

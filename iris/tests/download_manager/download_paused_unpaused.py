@@ -44,7 +44,7 @@ class Test(BaseTest):
         expected = exists(DownloadManager.DownloadState.PROGRESS, 10)
         assert_true(self, expected, 'Download was resumed.')
 
-        # tear_down
+    def teardown(self):
         click(DownloadManager.DownloadsPanel.DOWNLOAD_CANCEL)
 
         expected = exists(DownloadManager.DownloadState.CANCELED, 10)

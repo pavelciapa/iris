@@ -12,6 +12,7 @@ from iris.api.core.firefox_ui.library_menu import LibraryMenu
 from iris.api.core.firefox_ui.nav_bar import NavBar
 from iris.api.core.mouse import click
 from iris.api.core.region import wait, exists, Pattern, logger
+from iris.api.core.util.core_helper import IrisCore
 from iris.api.helpers.keyboard_shortcuts import scroll_down
 from iris.api.helpers.test_utils import access_and_check_pattern
 
